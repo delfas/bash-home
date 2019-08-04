@@ -1,20 +1,57 @@
+
+# Limit number of lines and entries in the history.
+export HISTFILESIZE=50000
+export HISTSIZE=50000
+
+#!/bin/bash
+# This file runs every time you open a new terminal window.
+
+# Add a timestamp to each command.
+export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
+
+# Duplicate lines and lines starting with a space are not put into the history.
+export HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it.
+shopt -s histappend
+
+# Enable bash completion.
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+#    . /etc/bash_completion
+#fi
+
+# Load aliases if they exist.
+[ -f "$HOME/.aliases" ] && source "$HOME/.aliases"
+
+# Determine git branch.
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+
+# If it's an xterm compatible terminal, set the title to user@host: dir.
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# If not running interactively, don't do anything
+# [ -z "$PS1" ] && return
+
+# Improve output of less for binary files.
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
-
-# don't put duplicate lines in the history. See bash(1) for more options
-# ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
-
-# append to the history file, don't overwrite it
-shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -93,19 +130,52 @@ fi
 
 alias python=python3
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-#    . /etc/bash_completion
-#fi
 
 export HOME=~
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim-data
 
-export DISPLAY=:0
-export FZF_DEFAULT_COMMAND='rg --files'
+# Enable a better reverse search experience.
+#   Requires: https://github.com/junegunn/fzf (to use fzf in general)
+#   Requires: https://github.com/BurntSushi/ripgrep (for using rg below)
+# export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
+[ -f "$HOME/.fzf.bash" ] && source "$HOME/.fzf.bash"
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export BROWSER=google-chrome
+
+# Adding wsl-open as a browser for Bash for Windows
+if [[ $(uname -r) == *Microsoft ]]; then
+  if [[ -z google-chrome ]]; then
+    export BROWSER=wsl-open
+  else
+    export BROWSER=google-chrome:wsl-open
+  fi
+fi
+
+# WSL (Windows Subsystem for Linux) specific settings.
+if grep -qE "(Microsoft|WSL)" /proc/version &>/dev/null; then
+    # Adjustments for WSL's file / folder permission metadata.
+    if [ "$(umask)" = "0000" ]; then
+      umask 0022
+    fi
+
+    # Access local X-server with VcXsrv.
+    #   Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
+    export DISPLAY=:0
+
+    # Configure the Docker CLI to use the Docker for Windows daemon.
+    #   Requires: https://docs.docker.com/docker-for-windows/install/
+    export DOCKER_HOST=tcp://localhost:2375
+
+    if [[ -z google-chrome ]]; then
+      export BROWSER=wsl-open
+    else
+      export BROWSER=google-chrome:wsl-open
+    fi
+fi
+
 
 # Use Neovim as "preferred editor"
 export VISUAL=nvim
@@ -116,9 +186,12 @@ alias vi=nvim
 
 # Detecting that a shell is running inside a terminal buffer
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
-  export PS1="» "
+  # export PS1="» "
+  export PS1='\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\] \[[01;33m\]$(parse_git_branch)\[[00m\]» '
 else
-  export PS1="\$ "
+  # Set a non-distracting prompt.
+  export PS1='\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\] \[[01;33m\]$(parse_git_branch)\[[00m\]\$ '
+  # export PS1="\$ "
 fi
 
 
@@ -131,17 +204,6 @@ if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
   fi
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export BROWSER=google-chrome
-
-# Adding wsl-open as a browser for Bash for Windows
-if [[ $(uname -r) == *Microsoft ]]; then
-  if [[ -z google-chrome ]]; then
-    export BROWSER=wsl-open
-  else
-    export BROWSER=google-chrome:wsl-open
-  fi
-fi
 
 complete -o nospace -o plusdirs -F _fzf_dir_completion cd

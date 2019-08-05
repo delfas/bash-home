@@ -163,7 +163,7 @@ if grep -qE "(Microsoft|WSL)" /proc/version &>/dev/null; then
 
     # Access local X-server with VcXsrv.
     #   Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
-    export DISPLAY=:0
+    export DISPLAY=:1.0
 
     # Configure the Docker CLI to use the Docker for Windows daemon.
     #   Requires: https://docs.docker.com/docker-for-windows/install/

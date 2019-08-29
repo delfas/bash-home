@@ -219,7 +219,7 @@ if ! xset q &>/dev/null; then
     )&>/dev/null
 fi
 
-complete -o nospace -o plusdirs -F _fzf_dir_completion cd
+complete -o nospace -o plusdirs -F _fzf_dir_completion cd ls cp mv less
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

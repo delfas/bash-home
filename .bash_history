@@ -12,7 +12,7 @@ git status
 git add .
 git commit -m "Replace exception field in ticket quote response with string error message field"
 git push origin develop
-nvim paket.dependencies 
+nvim paket.dependencies
 pwd
 git status
 git pull origin develop
@@ -124,7 +124,7 @@ exit
 cd
 cd .vim/pack/minpac/start/YouCompleteMe/
 ll
-./install.sh 
+./install.sh
 nvim-qt
 pwd
 cd ..
@@ -183,7 +183,7 @@ pwd
 cd /mnt/d/pull_requests/juliet_ticketdispenser/
 pwd
 ll
-nvim paket.dependencies 
+nvim paket.dependencies
 paket.exe install
 pwd
 packet.exe install
@@ -196,7 +196,7 @@ git branch
 pwd
 git branch
 pwd
-nvim src/Settings/defaults.json 
+nvim src/Settings/defaults.json
 pwd
 git branch
 git status
@@ -264,7 +264,7 @@ git add .
 git status
 git branch
 git commit -m "Consumer adapter refactoring. Warning: Broken tests"
-git push origin feature/switch_from_in_memory_to_rabbitmq 
+git push origin feature/switch_from_in_memory_to_rabbitmq
 nvim-qt
 exit
 pwd
@@ -276,7 +276,7 @@ pwd
 cd /mnt/d/projects/
 l
 l New\ folder/
-l 
+l
 l test
 cd /mnt/d/delete_me/
 ll
@@ -357,7 +357,7 @@ git pull origin develop
 pwd
 cd build
 powershell.exe
-nvim /mnt/d/tmp/BizApps.MSP.LogicNow.TicketDispenserFacade.0.1.0.7/install.ps1 
+nvim /mnt/d/tmp/BizApps.MSP.LogicNow.TicketDispenserFacade.0.1.0.7/install.ps1
 apt update
 apt upgrade
 nvim-qt
@@ -394,7 +394,7 @@ ll bin
 ll bin/Debug/
 ll bin/
 pwd
-nvim src/powershell/install.ps1 
+nvim src/powershell/install.ps1
 nvim-qt
 cd
 cd .vim/pack/minpac/
@@ -420,7 +420,7 @@ pwd
 exit
 d:
 pwd
-./build.sh 
+./build.sh
 powershell
 powershell.exe
 exit
@@ -436,7 +436,7 @@ git branch
 git pull origin develop
 git push origin develop
 paket.exe install
-nvim paket.dependencies 
+nvim paket.dependencies
 paket.exe install
 pwd
 git status
@@ -467,7 +467,7 @@ git co development
 git status
 cd $(git rev-parse --show-toplevel)
 pwd
-nvim .gitignore 
+nvim .gitignore
 git status
 git add .
 git commit
@@ -480,12 +480,12 @@ pwd
 git branch
 git status
 powershell.exe
-nvr src/CommonBranchInfo.cs 
+nvr src/CommonBranchInfo.cs
 powershell.exe
 ./build/build.bat Build-Only
 powershell.exe
 git status
-nvim src/lib/SolarWinds.BizApps.OppQuoteFacade.App/Extensions/ConfigurationExtension.cs 
+nvim src/lib/SolarWinds.BizApps.OppQuoteFacade.App/Extensions/ConfigurationExtension.cs
 pwd
 cd $(git rev-parse --show-toplevel)
 git status
@@ -494,7 +494,7 @@ git status
 pwd
 cd $(git rev-parse --show-toplevel)
 pwd
-nvim build/nuspecs/BizApps.MSP.LogicNow.OppQuoteSaga.paket.template 
+nvim build/nuspecs/BizApps.MSP.LogicNow.OppQuoteSaga.paket.template
 pad
 pwd
 git remote show origin
@@ -547,7 +547,7 @@ ll packages/Biz*MAXBack*
 ll packages/Biz*MAXBack*/lib
 paket.exe install
 pwd
-nvim temp.build 
+nvim temp.build
 poweshell.exe
 powershell.exe
 build/build.bat build-only
@@ -577,14 +577,14 @@ cd ../juliet_account_service/
 ls
 mv paket.dependencies Paket.dependencies
 explorer.exe .
-nvim paket.dependencies 
+nvim paket.dependencies
 explorer.exe .
 pwd
 paket.exe install
 ll
 fzf paket.de
 fzf
-nvim src/powershell/install.ps1 
+nvim src/powershell/install.ps1
 pwd
 cd ../..
 pwd
@@ -652,7 +652,7 @@ ls src/
 ls src/Settings
 find $PWD
 git status
-nvim src/lib/SolarWinds.BizApps.MSP.LogicNow.AccountDiscountFacade.Host/Init.cs 
+nvim src/lib/SolarWinds.BizApps.MSP.LogicNow.AccountDiscountFacade.Host/Init.cs
 pwd
 cd juliet_registrationv1_service/
 cd /mnt/d/projects/
@@ -743,7 +743,7 @@ clear
 bin/Debug/RegistrationServiceSaga/SolarWinds.BizApps.MSP.LogicNow.RegistrationService.Saga.Host.exe diagnostic /diagLevel:5 /production:false /noHappyPath:true
 git status
 git add .
-git commit -m "Add generic reflection for tenant interface object: log 1 hr, fix integration test: log 2 hrs, fix activities endpoint mapping: log 2 hrs, fix automapper profile: log 2 hrs"  
+git commit -m "Add generic reflection for tenant interface object: log 1 hr, fix integration test: log 2 hrs, fix activities endpoint mapping: log 2 hrs, fix automapper profile: log 2 hrs"
 git push origin develop
 exit
 pwd
@@ -814,7 +814,7 @@ pwd
 git status
 clear
 pwd
-nvr -p /mnt/d/mbst/juliet_escalation_service/src/Settings/escalationservicesaga/defaults.json 
+nvr -p /mnt/d/mbst/juliet_escalation_service/src/Settings/escalationservicesaga/defaults.json
 pwd
 git status
 git add .
@@ -908,7 +908,7 @@ clear
 bin/Debug/RegistrationServiceFacade/SolarWinds.BizApps.MSP.LogicNow.RegistrationServiceFacade.Host.exe run /level:feature
 paket.exe install
 bin/Debug/RegistrationServiceFacade/SolarWinds.BizApps.MSP.LogicNow.RegistrationServiceFacade.Host.exe run /level:feature
-git status 
+git status
 git add .
 git commit -m "Fix controller post; fix validate, log 1.5 hrs"
 git push origin develop
@@ -1010,7 +1010,7 @@ git commit -m "Changed application name per deployment plan: log 30 mins"
 git push origin feature/add_service_facade
 git co develop
 git merge feature/add_service_facade
-nvr -p src/CommonBranchInfo.cs 
+nvr -p src/CommonBranchInfo.cs
 git status
 git push origin develop
 exit
@@ -1089,7 +1089,7 @@ more .bashrc
 nvr -p .bashrc
 . ~/.bashrc
 powershell.exe
-nvr -p /mnt/c/Users/mike.kim/.ideavimrc 
+nvr -p /mnt/c/Users/mike.kim/.ideavimrc
 powershell.exe
 pwd
 cd /mnt/d/mbst/juliet_registrationv1_service/
@@ -1161,7 +1161,7 @@ pwd
 git status
 bin/Debug/RegistrationServiceSaga/SolarWinds.BizApps.MSP.LogicNow.RegistrationServiceSaga.Host.exe init /production:false
 bin/Debug/RegistrationServiceSaga/SolarWinds.BizApps.MSP.LogicNow.RegistrationServiceSaga.Host.exe diagnostic /diagLevel:5 /production:false /noHappPath:true
-nvr -p /mnt/c/Users/mike.kim/.ideavimrc 
+nvr -p /mnt/c/Users/mike.kim/.ideavimrc
 bin/Debug/RegistrationServiceSaga/SolarWinds.BizApps.MSP.LogicNow.RegistrationServiceSaga.Host.exe diagnostic /diagLevel:5 /production:false /noHappPath:true
 bin/Debug/TelemetryServiceSaga/SolarWinds.BizApps.MSP.LogicNow.TelemetryServiceSaga.Host.exe init /production:false
 bin/Debug/TelemetryServiceSaga/SolarWinds.BizApps.MSP.LogicNow.TelemetryServiceSaga.Host.exe diagnostic /diagLevel:5 /production:false /noHappyPath:true
@@ -1232,7 +1232,7 @@ bin/Debug/TelemetryServiceFacade/SolarWinds.BizApps.MSP.LogicNow.TelemetryServic
 powershell.exe
 git status
 git co develop
-git merge feature/initial_deployment 
+git merge feature/initial_deployment
 pwd
 cd /mnt/d/mbst/juliet_compliance_service/
 git status
@@ -1243,15 +1243,15 @@ git commit -m "Clean up
 "
 git push origin develop
 git status
-git co feature/add_service_facade 
+git co feature/add_service_facade
 git merge develop
-more src/CommonBranchInfo.cs 
+more src/CommonBranchInfo.cs
 powershell
 powershell.exe
 git status
 git add .
 git commit -m "Modified branch info"
-git push origin feature/add_service_facade 
+git push origin feature/add_service_facade
 git status
 pwd
 cd /mnt/d/mbst/juliet_registrationv1_service/
@@ -1259,14 +1259,14 @@ git status
 git add .
 git commit -m "Clean up"
 git push origin develop
-git co -b feature/initial_deployment 
+git co -b feature/initial_deployment
 git co feature/initial_deployment
 git merge develop
 powershell.exe
 git status
 git add .
 git commit -m "Modified branch info"
-git push origin feature/initial_deployment 
+git push origin feature/initial_deployment
 pwd
 git status
 pwd
@@ -1337,7 +1337,7 @@ pwd
 ll
 paket.exe install
 powershell.exe
-nvr -p src/Settings/registrationv2servicefacade/defaults.json 
+nvr -p src/Settings/registrationv2servicefacade/defaults.json
 powershell.exe
 bin/Debug/RegistrationV2Facade/SolarWinds.BizApps.MSP.LogicNow.RegistrationV2Facade.Host.exe init /production:false
 bin/Debug/RegistrationV2Facade/SolarWinds.BizApps.MSP.LogicNow.RegistrationV2Facade.Host.exe init run /level:feature
@@ -1390,9 +1390,9 @@ ll
 cd juliet-tenant-v2-service/
 paket.exe install
 pwd
-nvr -p paket.dependencies 
+nvr -p paket.dependencies
 powershell.exe
-nvr -p build/nuspec/BizApps.MSP.LogicNow.TenantV2Facade.paket.template 
+nvr -p build/nuspec/BizApps.MSP.LogicNow.TenantV2Facade.paket.template
 pwd
 bin/Debug/TenantV2Facade/SolarWinds.BizApps.MSP.LogicNow.TenantV2Facade.Host.exe init /production:false
 rm -rf bin/
@@ -1422,7 +1422,7 @@ pwd
 git status
 git co develop
 git merge feature/add_escalation_facade
-nvr -p src/CommonBranchInfo.cs 
+nvr -p src/CommonBranchInfo.cs
 git status
 git commit
 pwd
@@ -1572,7 +1572,7 @@ git commit
 git status
 git push origin feature/sync_saga_with_workflow
 powershell.exe
-nvr -p /mnt/d/projects/juliet/get_call_inventory.md 
+nvr -p /mnt/d/projects/juliet/get_call_inventory.md
 pwd
 exit
 pwd
@@ -1608,7 +1608,7 @@ mv ./build/nuspecs/BizApps.MSP.LogicNow.ComplianceServiceFacade.paket.template .
 ls build/nuspecs
 mv ./build/nuspecs/BizApps.MSP.LogicNow.ComplianceServiceSaga.paket.template ./build/nuspecs/BizApps.MSP.LogicNow.LoggingServiceSaga.paket.template
 ls build/nuspecs
-nvr -p build/nuspecs/BizApps.MSP.LogicNow.LoggingServiceFacade.paket.template 
+nvr -p build/nuspecs/BizApps.MSP.LogicNow.LoggingServiceFacade.paket.template
 pwd
 powershell.exe
 7z.exe x -tzip bin/BuildTempFiles/BuildOutput/BizApps.MSP.LogicNow.LoggingServiceFacade/BizApps.MSP.LogicNow.LoggingServiceFacade.0.1.0-.0.nupkg -o"C:\\temp\\delete.me\\logging.facade\\"
@@ -1682,7 +1682,7 @@ source ./.bashrc
 cd /mnt/d/mbst/juliet_ticketdispenser/
 git co feature/get_quote
 git status
-nvr -p /mnt/d/projects/juliet/get_call_inventory.md 
+nvr -p /mnt/d/projects/juliet/get_call_inventory.md
 pwd
 git status
 git add -A
@@ -1720,7 +1720,7 @@ git co develop
 git merge feature/get_quote
 git pull origin develop
 nvim-qt
-nvim-qt /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies 
+nvim-qt /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies
 exit
 pwd
 exit
@@ -1768,7 +1768,7 @@ powershell.exe
 pwd
 paket.exe install
 cp build/nuspecs/BizApps.MSP.LogicNow.RegistrationServiceSaga.paket.template build/nuspecs/BizApps.MSP.LogicNow.TelemetryService.paket.template
-nvr -p build/nuspecs/BizApps.MSP.LogicNow.TelemetryService.paket.template 
+nvr -p build/nuspecs/BizApps.MSP.LogicNow.TelemetryService.paket.template
 pwd
 git status
 powershell.exe
@@ -1814,7 +1814,7 @@ pwd
 git status
 git add -A
 git commit
-nvr -p .gitignore 
+nvr -p .gitignore
 explorer .
 explorer.exe .
 git status
@@ -1825,11 +1825,11 @@ explorer.exe .
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
-//      Minor Version 
+//      Minor Version
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
+// You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
@@ -2067,7 +2067,7 @@ cd .vim
 #1565058678
 git status
 #1565058685
-git add vimrc 
+git add vimrc
 #1565058688
 git status
 #1565058720
@@ -2129,7 +2129,7 @@ git status
 #1565104718
 powershell.exe
 #1565105495
-nvr -p /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies 
+nvr -p /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies
 #1565108576
 paket.exe install
 #1565112394
@@ -2247,7 +2247,7 @@ git push origin develop
 #1565131580
 nvr -O build/nuspecs/BizApps.MSP.LogicNow.ComplianceService
 #1565131605
-nvr -O build/nuspecs/BizApps.MSP.LogicNow.ComplianceServiceSaga.paket.template 
+nvr -O build/nuspecs/BizApps.MSP.LogicNow.ComplianceServiceSaga.paket.template
 #1565134233
 git status
 #1565134242
@@ -2505,7 +2505,7 @@ rm -rf bin/
 #1565217733
 paket.exe install
 #1565218069
-nvr -O /mnt/d/mbst/juliet_ticketdispenser/src/Settings/oppquotesaga/defaults.json 
+nvr -O /mnt/d/mbst/juliet_ticketdispenser/src/Settings/oppquotesaga/defaults.json
 #1565218229
 bin/Debug/TenantV2Saga/SolarWinds.BizApps.MSP.LogicNow.TenantV2Saga.Host.exe init /production:false
 #1565218271
@@ -2603,7 +2603,7 @@ ll -la local/
 #1565041823
 ll -la local/share/
 #1565041832
-ll -la 
+ll -la
 #1565041836
 cd ..
 #1565041837
@@ -2695,7 +2695,7 @@ cd
 #1565281611
 nano .bashrc
 #1565281688
-nvim .bashrc 
+nvim .bashrc
 #1565281755
 source .bashrc
 #1565281816
@@ -2737,7 +2737,7 @@ rm -rf bin/
 #1565358695
 paket.exe update
 #1565359092
-nvr -p paket.lock 
+nvr -p paket.lock
 #1565361277
 paket.exe update
 #1565361869
@@ -2915,7 +2915,7 @@ less ca-certificates.crt
 #1565386074
 fzf
 #1565386456
-find cacert.pem 
+find cacert.pem
 #1565386471
 pwd
 #1565386477
@@ -2933,7 +2933,7 @@ ls -alf cacert.pem
 #1565386851
 echo $PWD
 #1565386862
-l ./cacert.pem 
+l ./cacert.pem
 #1565386940
 cd /mnt/d/bitbucket/ticket_dispenser/
 #1565386950
@@ -2945,13 +2945,13 @@ ln /mnt/c/Windows/System32/xbash.exe /mnt/c/Windows/System32/bash.exe
 #1565387200
 ll
 #1565387216
-ll /mnt/c/Windows/System32/bash.exe 
+ll /mnt/c/Windows/System32/bash.exe
 #1565387271
-ls -alF /mnt/c/Windows/System32/bash.exe 
+ls -alF /mnt/c/Windows/System32/bash.exe
 #1565387893
 ll
 #1565388103
-nvr -p build/nuspecs/BizApps.MSP.LogicNow.JulietCore.paket.template 
+nvr -p build/nuspecs/BizApps.MSP.LogicNow.JulietCore.paket.template
 #1565388118
 ls
 #1565388676
@@ -2967,19 +2967,19 @@ cd ..
 #1565389237
 rm -rf packages
 #1565389336
-rm -rf src/lib/SolarWinds.BizApps.Component.Generic/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.Generic/bin
 #1565389357
-rm -rf src/lib/SolarWinds.BizApps.Component.OppQuote/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.OppQuote/bin
 #1565389403
 rm -rf src/lib/SolarWinds.BizApps.Component.Submissions/bin
 #1565389429
-rm -rf src/lib/SolarWinds.BizApps.Component.OppQuoteSaga/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.OppQuoteSaga/bin
 #1565389436
-rm -rf src/lib/SolarWinds.BizApps.Component.Case.Abstract/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.Case.Abstract/bin
 #1565389444
-rm -rf src/lib/SolarWinds.BizApps.Component.Lead.Abstract/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.Lead.Abstract/bin
 #1565389452
-rm -rf src/lib/SolarWinds.BizApps.Component.OppQuote.Saga/bin 
+rm -rf src/lib/SolarWinds.BizApps.Component.OppQuote.Saga/bin
 #1565447375
 exit
 #1565450324
@@ -3005,7 +3005,7 @@ cd ..
 #1565393833
 ll
 #1565393900
-nvr -p ~/.bashrc 
+nvr -p ~/.bashrc
 #1565394147
 ll
 #1565394202
@@ -3111,7 +3111,7 @@ mv msp.logicnow.juliet.tenant.7z ./msp.logicnow.juliet.tenant/
 #1565448551
 mv msp.logicnow.juliet.user.7z ./msp.logicnow.juliet.user/
 #1565449733
-nvr -p /mnt/d/MobaXterm_Portable_v12.0/MobaXterm.ini 
+nvr -p /mnt/d/MobaXterm_Portable_v12.0/MobaXterm.ini
 #1565450458
 ls /mnt/c/Windows/System32/*bash.exe
 #1565450465
@@ -3243,9 +3243,9 @@ cd msp.logicnow.juliet.oppquotesaga
 #1565465360
 cd ..
 #1565465392
-rf -rf msp.logicnow.juliet.oppquotesaga 
+rf -rf msp.logicnow.juliet.oppquotesaga
 #1565465405
-rm -rf msp.logicnow.juliet.oppquotesaga 
+rm -rf msp.logicnow.juliet.oppquotesaga
 #1565465704
 exit
 #1565465999
@@ -3277,7 +3277,7 @@ git add .
 #1565535594
 git status
 #1565536064
-nvr -p /mnt/c/Users/mike.kim/.ideavimrc 
+nvr -p /mnt/c/Users/mike.kim/.ideavimrc
 #1565544170
 cd ..
 #1565544178
@@ -3361,7 +3361,7 @@ paket.exe install
 #1565621722
 powershell.exe
 #1565621810
-nvr -p build/plugins/Settings.ps1 
+nvr -p build/plugins/Settings.ps1
 #1565622703
 powershell.exe
 #1565624367
@@ -3369,7 +3369,7 @@ rm -rf packages/
 #1565624374
 powershell.exe
 #1565624528
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565624568
 powershell.exe
 #1565625011
@@ -3383,9 +3383,9 @@ paket.exe install
 #1565625104
 powershell.exe
 #1565625163
-nvr -p build/plugins/Settings.ps1 
+nvr -p build/plugins/Settings.ps1
 #1565625257
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565625278
 powershell.exe
 #1565632414
@@ -3431,7 +3431,7 @@ powershell.exe
 #1565636998
 explorer.exe .
 #1565637316
-nvr -p build/plugins/Settings.ps1 
+nvr -p build/plugins/Settings.ps1
 #1565646359
 exit
 #1565649128
@@ -3457,13 +3457,13 @@ paket.exe install
 #1565651174
 powershell.exe
 #1565651225
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565651362
 powershell.exe
 #1565653066
 git co -b develop
 #1565653092
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565653118
 ,
 #1565653175
@@ -3489,7 +3489,7 @@ paket.exe install
 #1565697495
 powershell.exe
 #1565697541
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565697713
 powershell.exe
 #1565697938
@@ -3503,7 +3503,7 @@ rm -rf packages/
 #1565704855
 powershell.exe
 #1565723907
-nvr -p /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies 
+nvr -p /mnt/d/mbst/juliet_ticketdispenser/paket.dependencies
 #1565723986
 cd /mnt/d/mbst/juliet_ticketdispenser/
 #1565724002
@@ -3521,7 +3521,7 @@ ll
 #1565729007
 nvr -p paket.dependencies
 #1565729080
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565730390
 paket.exe install
 #1565730420
@@ -3541,7 +3541,7 @@ paket.exe install
 #1565731634
 powershell.exe
 #1565731679
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565731755
 powershell.exe
 #1565731837
@@ -3555,11 +3555,11 @@ paket.exe install
 #1565732709
 powershell.exe
 #1565733330
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565733344
 cd ../contact
 #1565733348
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565733462
 nvr -p build/nuspecs/
 #1565734192
@@ -3573,7 +3573,7 @@ paket.exe install
 #1565734437
 powershell.exe
 #1565734500
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565734549
 powershell.exe
 #1565734646
@@ -3591,7 +3591,7 @@ paket.exe install
 #1565735406
 powershell.exe
 #1565735438
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565735502
 powershell.exe
 #1565735618
@@ -3611,7 +3611,7 @@ paket.exe install
 #1565736422
 powershell.exe
 #1565736449
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565736547
 powershell.exe
 #1565736630
@@ -3641,7 +3641,7 @@ powershell.exe
 #1565738392
 cd ../productservice/
 #1565738398
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565738475
 paket.exe install
 #1565738518
@@ -3667,7 +3667,7 @@ powershell.exe
 #1565753314
 cd ../salesforce/
 #1565753645
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565753700
 paket.exe install
 #1565753740
@@ -3683,7 +3683,7 @@ powershell.exe
 #1565754855
 cd ../shared
 #1565754866
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565754931
 paket.exe install
 #1565754969
@@ -3705,7 +3705,7 @@ paket.exe install
 #1565781894
 powershell.exe
 #1565781922
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565781981
 powershell.exe
 #1565782056
@@ -3729,7 +3729,7 @@ powershell.exe
 #1565785412
 cd ../user/
 #1565785424
-nvr -p build/plugins/set-devopsscripts.ps1 
+nvr -p build/plugins/set-devopsscripts.ps1
 #1565785487
 paket.exe install
 #1565785531
@@ -3797,7 +3797,7 @@ git add .
 #1565792536
 git status
 #1565792559
-nvr -o .gitignore 
+nvr -o .gitignore
 #1565793975
 git status
 #1565793998
@@ -3807,7 +3807,7 @@ git add .gitignore
 #1565794060
 git status
 #1565794076
-nvr -o .gitignore 
+nvr -o .gitignore
 #1565794193
 git status
 #1565794233
@@ -3819,7 +3819,7 @@ git init
 #1565794390
 git status
 #1565794417
-nvr -o .gitignore 
+nvr -o .gitignore
 #1565795696
 git status
 #1565795831
@@ -3831,7 +3831,7 @@ git commit -m "Initial commit"
 #1565795878
 git co -b develop
 #1565795986
-nvr -o /mnt/d/projects/git.me 
+nvr -o /mnt/d/projects/git.me
 #1565796107
 git remote add origin https://bitbucket.solarwinds.com/scm/mbst/juliet-generic.git
 #1565796123
@@ -3959,7 +3959,7 @@ cd ../shared
 #1565816628
 ll
 #1565816784
-nvr -o src/lib/SolarWinds.BizApps.Component.Shared.Abstract/paket.references 
+nvr -o src/lib/SolarWinds.BizApps.Component.Shared.Abstract/paket.references
 #1565816875
 nvr -o paket.dependencies
 #1565816944
@@ -4127,7 +4127,7 @@ git push -u origin feature/replace_project_reference
 #1565877997
 git co develop
 #1565878009
-git merge feature/replace_project_reference 
+git merge feature/replace_project_reference
 #1565878012
 git status
 #1565878055
@@ -4153,7 +4153,7 @@ git status
 #1565879113
 git push origin develop
 #1565884512
-cd 
+cd
 #1565884557
 ./configure --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-pcre=../pcre-4.4 --with-zlib=../zlib-1.1.3
 #1565884580
@@ -4201,15 +4201,15 @@ netstat | head
 #1565886903
 /usr/sbin/nginx
 #1565887141
-nvr -p /etc/nginx/nginx.conf 
+nvr -p /etc/nginx/nginx.conf
 #1565887829
 /usr/sbin/nginx
 #1565887983
-nvr -p /etc/nginx/nginx.conf 
+nvr -p /etc/nginx/nginx.conf
 #1565888006
 /usr/sbin/nginx
 #1565888018
-nvr -p /etc/nginx/nginx.conf 
+nvr -p /etc/nginx/nginx.conf
 #1565888281
 /usr/sbin/nginx
 #1565888299
@@ -4219,7 +4219,7 @@ systemctl start nginx.service
 #1565888682
 /etc/init.d/nginx start
 #1565888728
-nvr -p /etc/nginx/nginx.conf 
+nvr -p /etc/nginx/nginx.conf
 #1565888743
 /etc/init.d/nginx stop
 #1565888748
@@ -4229,15 +4229,15 @@ nvr -p /etc/nginx/nginx.conf
 #1565888780
 sudo /etc/init.d/nginx start
 #1565888881
-nvr -p /etc/nginx/sites-available/default 
+nvr -p /etc/nginx/sites-available/default
 #1565890753
 nginx -t
 #1565890770
-nvr -p /etc/nginx/sites-available/default 
+nvr -p /etc/nginx/sites-available/default
 #1565890823
 nginx -t
 #1565890862
-nvr -p /etc/nginx/sites-available/default 
+nvr -p /etc/nginx/sites-available/default
 #1565890884
 nginx -t
 #1565891329
@@ -4251,7 +4251,7 @@ ll
 #1565891894
 cd home
 #1565891897
-cd 
+cd
 #1565891898
 pwd
 #1565891915
@@ -4281,7 +4281,7 @@ cd /mnt/d/bitbucket/generic/submission/
 #1565648193
 git co -b develop
 #1565648264
-nvim-qt paket.dependencies 
+nvim-qt paket.dependencies
 #1565798893
 cd ..
 #1565798898
@@ -4335,11 +4335,11 @@ cd /mnt/d/mbst/juliet_ticketdispenser/
 #1565901267
 bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceFacade.Host.exe run /level:feature
 #1565902274
-nvr -p /mnt/d/JuiletReverseProxy/Web.config 
+nvr -p /mnt/d/JuiletReverseProxy/Web.config
 #1565905059
 bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceFacade.Host.exe run /level:feature
 #1565963047
-nvr -l /mnt/c/inetpub/logs/LogFiles/W3SVC6/u_ex190816.log 
+nvr -l /mnt/c/inetpub/logs/LogFiles/W3SVC6/u_ex190816.log
 #1565968301
 ls /mnt/c/inetpub/logs/FailedReqLogFiles/
 #1565968306
@@ -4361,7 +4361,7 @@ bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceF
 #1565984592
 nvr -p /mnt/c/inetpub/logs/FailedReqLogFiles/W3SVC6/
 #1566181033
-nvr -o /mnt/d/projects/git.me 
+nvr -o /mnt/d/projects/git.me
 #1566223055
 exit
 #1566223114
@@ -4377,9 +4377,9 @@ exit
 #1566253136
 pwd
 #1566253156
-ll /home/mikekim/.local/lib/github-markdown-css/github-markdown.css 
+ll /home/mikekim/.local/lib/github-markdown-css/github-markdown.css
 #1566240637
-nvr -l /mnt/d/msp_services/keybox/readme.md 
+nvr -l /mnt/d/msp_services/keybox/readme.md
 #1566178987
 nvim
 #1566178997
@@ -4451,7 +4451,7 @@ nvim
 #1566254627
 sudo -
 #1566254635
-sudo -s 
+sudo -s
 #1566254904
 cd
 #1566254907
@@ -4463,9 +4463,9 @@ nvim ca-certificates.crt
 #1566255144
 git clone https://github.com/delfas/bash-home.git
 #1566255271
-nvim /etc/ssl/certs/ca-certificates.crt 
+nvim /etc/ssl/certs/ca-certificates.crt
 #1566255742
-sudo -s 
+sudo -s
 #1566255942
 git clone https://github.com/delfas/bash-home.git
 #1566255961
@@ -4487,7 +4487,7 @@ cp -r bash-home/.git .
 #1566256400
 ll bash-home/
 #1566256413
-ll 
+ll
 #1566256451
 source .bashrc
 #1566256457
@@ -4515,9 +4515,9 @@ ll
 #1566257488
 ll bash-home/
 #1566257542
-cp bash-home/etc/ ~/ 
+cp bash-home/etc/ ~/
 #1566257549
-cp -r bash-home/etc/ ~/ 
+cp -r bash-home/etc/ ~/
 #1566257556
 ll ~/etc/
 #1566257584
@@ -4545,7 +4545,7 @@ mkdir -p ~/.vim/
 #1566257928
 cp modern-vim/vimrc ~/.vim/
 #1566257946
-mklink 
+mklink
 #1566257956
 link
 #1566257966
@@ -4555,7 +4555,7 @@ link ~/.vim/vimrc .vimrc
 #1566258022
 mv .vimrc ~/
 #1566258038
-ll ~/.vimrc 
+ll ~/.vimrc
 #1566258054
 rm ~/.vimrc
 #1566258099
@@ -4599,7 +4599,7 @@ sudo apt install neovim-qt
 #1566258503
 nvim-qt
 #1566258533
-source .bashrc 
+source .bashrc
 #1566258553
 echo $DISPLAY
 #1566258583
@@ -4699,17 +4699,17 @@ cd .vim/pack/minpac/start/YouCompleteMe/
 #1566303364
 ll
 #1566303380
-nvr README.md 
+nvr README.md
 #1566303398
-./install.sh 
+./install.sh
 #1566303454
 python --version
 #1566303465
-python ./install.py 
+python ./install.py
 #1566303484
 git submodule update --init --recursive
 #1566303523
-python ./install.py 
+python ./install.py
 #1566303545
 git submodule update --init --recursive
 #1566303558
@@ -4719,7 +4719,7 @@ git pull origin master
 #1566337332
 ll
 #1566337348
-nvr 
+nvr
 #1566337414
 pip3 install pynvim
 #1566337441
@@ -4795,7 +4795,7 @@ nvim-qt
 #1566338294
 nvim .bashrc
 #1566338329
-source ./.bashrc 
+source ./.bashrc
 #1566338335
 nvim-qt
 #1566338477
@@ -4917,9 +4917,9 @@ mv .tmp .cache
 #1566342770
 ll
 #1566342853
-ll .cache/pip/http/a/9/6/7/d/a967d72653f7ef6b4a47cb644077ff7c0976c4d576cf760cf5dbe484 
+ll .cache/pip/http/a/9/6/7/d/a967d72653f7ef6b4a47cb644077ff7c0976c4d576cf760cf5dbe484
 #1566342890
-less .cache/pip/http/a/9/6/7/d/a967d72653f7ef6b4a47cb644077ff7c0976c4d576cf760cf5dbe484 
+less .cache/pip/http/a/9/6/7/d/a967d72653f7ef6b4a47cb644077ff7c0976c4d576cf760cf5dbe484
 #1566343004
 echo $XDG_CACHE_HOME
 #1566343194
@@ -4975,13 +4975,13 @@ cd .vim/pack/minpac/start/YouCompleteMe/
 #1566394540
 l
 #1566394548
-./install.py 
+./install.py
 #1566394569
 git submodule update --init --recursive
 #1566394605
-nvr -p README.md 
+nvr -p README.md
 #1566394627
-nvim -p README.md 
+nvim -p README.md
 #1566394709
 cd
 #1566394734
@@ -5009,7 +5009,7 @@ yarn install
 #1566395269
 yarn global add neovim
 #1566395291
-./install.sh 
+./install.sh
 #1566395329
 yarn install
 #1566395334
@@ -5035,11 +5035,11 @@ install.py
 #1566395404
 ./install.py
 #1566395438
-nvr -p README.md 
+nvr -p README.md
 #1566395845
-sudo apt install build-essential cmake python3-dev 
+sudo apt install build-essential cmake python3-dev
 #1566395902
-python3 install.py --clang-completer 
+python3 install.py --clang-completer
 #1566395917
 python3
 #1566395943
@@ -5059,7 +5059,7 @@ git status
 #1566396300
 git pull origin master
 #1566396340
-cd 
+cd
 #1566396342
 ll .vim
 #1566396347
@@ -5087,7 +5087,7 @@ cd ..
 #1566397517
 rm -rf YouCompleteMe/
 #1566397527
-git clone https://github.com/Valloric/YouCompleteMe.git 
+git clone https://github.com/Valloric/YouCompleteMe.git
 #1566397545
 git status
 #1566397562
@@ -5097,15 +5097,15 @@ git status
 #1566397569
 l
 #1566397586
-python3 install.py --clang-completer 
+python3 install.py --clang-completer
 #1566397617
 git submodule update --init --recursive
 #1566398153
-python3 install.py --clang-completer 
+python3 install.py --clang-completer
 #1566398269
 pwd
 #1566398274
-nvr -p README.md 
+nvr -p README.md
 #1566399077
 cd
 #1566399082
@@ -5175,7 +5175,7 @@ export PATH=$PATH:/usr/local/go/bin
 #1566411250
 go
 #1566411274
-nvr -l .profile 
+nvr -l .profile
 #1566411441
 export PATH=$PATH:/usr/local/go/bin
 #1566411467
@@ -5221,7 +5221,7 @@ cd ..
 #1566413023
 rm -rf vim-fugitive/
 #1566413032
-git clone https://github.com/tpope/vim-fugitive.git 
+git clone https://github.com/tpope/vim-fugitive.git
 #1566413041
 git status
 #1566413060
@@ -5277,7 +5277,7 @@ ll fonts
 #1566414870
 cd fonts/
 #1566414881
-./install.sh 
+./install.sh
 #1566415520
 pwd
 #1566415531
@@ -5297,7 +5297,7 @@ ll etx
 #1566415790
 ll etc
 #1566415807
-nvr -p .ssh/known_hosts 
+nvr -p .ssh/known_hosts
 #1566415856
 .. .npm/
 #1566415861
@@ -5313,7 +5313,7 @@ python3 install.py --cs-completer
 #1566416740
 nvr -p ~/.bashrc
 #1566416792
-source ~/.bashrc 
+source ~/.bashrc
 #1566416800
 python3 install.py --cs-completer
 #1566416918
@@ -5439,7 +5439,7 @@ cd build/
 #1566423206
 ls
 #1566423241
-./build.ps1 
+./build.ps1
 #1566423249
 ./build.ps1 build-only
 #1566423300
@@ -5463,7 +5463,7 @@ pwsh
 #1566423812
 bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceFacade.Host.exe init /production:false
 #1566425221
-nvim -p paket.dependencies 
+nvim -p paket.dependencies
 #1566484743
 git status
 #1566484761
@@ -5479,7 +5479,7 @@ pwsh
 #1566485685
 ll
 #1566485700
-./build.ps1 
+./build.ps1
 #1566485706
 ./build.ps1 build-only
 #1566485716
@@ -5489,7 +5489,7 @@ nvim -o src/lib/SolarWinds.BizApps.MSP.LogicNow.PendoFacade.Host/paket.reference
 #1566488344
 nvim -o src/lib/SolarWinds.BizApps.MSP.LogicNow.PendoFacade.Host
 #1566488739
-ll src/lib/SolarWinds.BizApps.MSP.LogicNow.PendoFacade.Host 
+ll src/lib/SolarWinds.BizApps.MSP.LogicNow.PendoFacade.Host
 #1566488786
 ll src/lib/SolarWinds.BizApps.MSP.LogicNow.PendoFacade/
 #1566488797
@@ -5627,7 +5627,7 @@ sudo pip3 install --user neovim-remote
 #1566389689
 sudo chmod -R 755 /home/mikekim/.cache/pip/
 #1566389692
-ll 
+ll
 #1566389723
 sudo chmod -R 755 /home/mikekim/
 #1566389739
@@ -5663,7 +5663,7 @@ neovim-qt
 #1566394943
 nvim-qt
 #1566421448
-source .bashrc 
+source .bashrc
 #1566421456
 nvim-qt
 #1566422513
@@ -5803,7 +5803,7 @@ cp /mnt/c/Users/mike.kim/.ssh/id_* ~/.ssh/
 #1566660570
 ll ~/.ssh
 #1566660606
-nvim /mnt/c/Users/mike.kim/.ssh/known_hosts .ssh/known_hosts 
+nvim /mnt/c/Users/mike.kim/.ssh/known_hosts .ssh/known_hosts
 #1566663087
 cd .vim/pack/minpac/start/
 #1566663112
@@ -5817,7 +5817,7 @@ cd vim-gutentags/
 #1566663308
 ll
 #1566663327
-nvim README.md 
+nvim README.md
 #1566663787
 cd
 #1566663804
@@ -5829,7 +5829,7 @@ ll ctags
 #1566663917
 cd ctags
 #1566663925
-./autogen.sh 
+./autogen.sh
 #1566663938
 cd ..
 #1566663948
@@ -5843,7 +5843,7 @@ git clone https://github.com/universal-ctags/ctags.git
 #1566664001
 cd ctags
 #1566664007
-./autogen.sh 
+./autogen.sh
 #1566664025
 ./configure
 #1566664043
@@ -5851,9 +5851,9 @@ ll
 #1566664051
 make
 #1566664065
-sudo ./autogen.sh 
+sudo ./autogen.sh
 #1566664077
-. ./autogen.sh 
+. ./autogen.sh
 #1566664120
 cd .vim/pack/minpac/start/
 #1566664123
@@ -5861,7 +5861,7 @@ cd ctags
 #1566664125
 ll
 #1566664135
-./autogen.sh 
+./autogen.sh
 #1566664140
 ./autogen.sh configure
 #1566664240
@@ -5877,7 +5877,7 @@ sudo apt install pkg-config
 #1566664370
 cd .vim/pack/minpac/start/ctags/
 #1566664373
-./autogen.sh 
+./autogen.sh
 #1566664410
 ./configure
 #1566664547
@@ -5891,19 +5891,19 @@ ctags --version
 #1566664826
 cd
 #1566664834
-nvim .vimrc 
+nvim .vimrc
 #1566671519
 ll
 #1566671654
-nvim .bashrc 
+nvim .bashrc
 #1566671720
-source ./.bashrc 
+source ./.bashrc
 #1566671781
-nvim .bashrc 
+nvim .bashrc
 #1566672103
-source ./.bashrc 
+source ./.bashrc
 #1566672116
-$BROWSER 
+$BROWSER
 #1566672880
 wsl-open http://google.com
 #1566672984
@@ -5941,11 +5941,11 @@ pwsh
 #1566674087
 open http://google.com
 #1566674103
-$BROWSER 
+$BROWSER
 #1566674262
 open http://google.com
 #1566674268
-$BROWSER 
+$BROWSER
 #1566674284
 wsl-open http://google.com
 #1566674300
@@ -5955,7 +5955,7 @@ ll
 #1566674490
 touch ./.inputrc
 #1566674504
-nvim .inputrc 
+nvim .inputrc
 #1566830042
 ll
 #1566830119
@@ -5969,7 +5969,7 @@ echo "**/NUL" >> .gitignore
 #1566830186
 git status
 #1566830198
-git add .gitignore 
+git add .gitignore
 #1566830201
 git status
 #1566830213
@@ -5981,7 +5981,7 @@ git log --
 #1566830730
 git status
 #1566830753
-vimdiff src/powershell/install.ps1 
+vimdiff src/powershell/install.ps1
 #1566843826
 sudo apt install xclip
 #1566830820
@@ -5989,7 +5989,7 @@ git status
 #1566830864
 nvim -o src/powershell/install.ps1
 #1566830994
-nvim /mnt/c/Windows/System32/inetsrv/Config/applicationHost.config 
+nvim /mnt/c/Windows/System32/inetsrv/Config/applicationHost.config
 #1566832513
 explorer .
 #1566832523
@@ -6009,7 +6009,7 @@ bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceF
 #1566835999
 git status
 #1566836047
-nvr paket.dependencies 
+nvr paket.dependencies
 #1566836136
 git status
 #1566836147
@@ -6063,15 +6063,15 @@ cd /home/mikekim/.vim
 #1566853247
 cd pack/minpac/start/
 #1566853267
-ll markdown-preview.nvim/app/bin/markdown-preview-linux 
+ll markdown-preview.nvim/app/bin/markdown-preview-linux
 #1566853271
-cd markdown-preview.nvim/app/bin/markdown-preview-linux 
+cd markdown-preview.nvim/app/bin/markdown-preview-linux
 #1566853277
 cd markdown-preview.nvim/app/bin/
 #1566853280
 ll
 #1566853291
-nvim markdown-preview-linux 
+nvim markdown-preview-linux
 #1566831103
 mv Web.config.copy /mnt/d/tmp/Web.config.reverse.proxy
 #1566831107
@@ -6085,7 +6085,7 @@ ll
 #1566831515
 ,
 #1566831538
-nvim ~/.bashrc 
+nvim ~/.bashrc
 #1566831647
 source ~/.bashrc
 #1566831939
@@ -6155,15 +6155,15 @@ ps aux | grep nvim
 #1566671500
 nvim-qt
 #1566674545
-source ./.inputrc 
+source ./.inputrc
 #1566674575
-source ./.bashrc 
+source ./.bashrc
 #1566674666
 open google-chrome-stable
 #1566674683
 open http://google.com
 #1566674705
-$BROWSER 
+$BROWSER
 #1566674726
 google-chrome-stable
 #1566674730
@@ -6221,11 +6221,11 @@ ll
 #1566860711
 git remote show origin
 #1566860725
-nvim README.md 
+nvim README.md
 #1566905870
 ll
 #1566905936
-nvim -l paket.dependencies 
+nvim -l paket.dependencies
 #1566905991
 cd
 #1566906008
@@ -6235,7 +6235,7 @@ ll
 #1566906058
 ./install
 #1566906108
-source ~/.bashrc 
+source ~/.bashrc
 #1566906203
 nvim -O ~/.fzf.bash
 #1566906838
@@ -6259,11 +6259,11 @@ bin/Debug/TicketDispenserFacade/SolarWinds.BizApps.MSP.LogicNow.OppQuoteServiceF
 #1566915457
 explorer.exe .
 #1566915824
-nvim -p /mnt/c/Windows/System32/inetsrv/Config/applicationHost.config 
+nvim -p /mnt/c/Windows/System32/inetsrv/Config/applicationHost.config
 #1566906295
 fzf
 #1566906443
-echo $FZF_DEFAULT_COMMAND 
+echo $FZF_DEFAULT_COMMAND
 #1566906453
 rg
 #1566906488
@@ -6293,11 +6293,11 @@ ll .ssh
 #1566907660
 less .ssh/config
 #1566907699
-less .ssh/known_hosts 
+less .ssh/known_hosts
 #1566907883
 
 #1566907898
-$BROWSER 
+$BROWSER
 #1566908169
 openssl s_client -connect www.github.com:443 -verify 255 -CAfile cacert.pem
 #1566908212
@@ -6346,151 +6346,3 @@ rg
 cargo
 #1566909293
 sudo apt install cargo
-#1566930457
-,
-#1566945680
-cd /mnt/mbst/
-#1566945681
-ll
-#1566945694
-cd /mnt/d/mbst/
-#1566945696
-ll
-#1566945709
-cd juliet-pendo-service
-#1566945721
-git remote show origin
-#1566945867
-ll
-#1566945944
-7z.exe a -t7z msp.logicnow.juliet.pendo.7z .
-#1566945951
-pwsh
-#1567011222
-explorer.exe .
-#1567011251
-cd /mnt/d/mbst/juliet_ticketdispenser/
-#1567011257
-explorer.exe .
-#1567011307
-cmder.exe
-#1567012120
-cd ..
-#1567024256
-curl v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG k --cert clientcert.pem:<password>
-#1567024274
-curl v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG k --cert \ clientcert.pem:<password>
-#1567024292
-curl v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG k --cert / clientcert.pem:<password>
-#1567024309
-curl v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG k --cert clientcert.pem:<password>
-#1567024316
-curl
-#1567024330
-sudo apt install curl
-#1567024339
-which curl
-#1567024342
-curl
-#1567024362
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert clientcert.pem:<password>
-#1567024381
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert clientcert.pem:password
-#1567024465
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert /mnt/c/Users/mike.kim/Desktop/MS-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567024489
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert "/mnt/c/Users/mike.kim/Desktop/MS-US-PRD.pem":26b34838e8e91a904189e48016e6e441
-#1567024519
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert /mnt/c/Users/mike.kim/Desktop/MF-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567024531
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert "/mnt/c/Users/mike.kim/Desktop/MF-US-PRD.pem":26b34838e8e91a904189e48016e6e441
-#1567024558
-cp /mnt/c/Users/mike.kim/Desktop/MF-US-PRD.pem .
-#1567024571
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567024616
-ll
-#1567024640
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.pem:
-#1567024685
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.crt:26b34838e8e91a904189e48016e6e441
-#1567024693
-ll
-#1567024705
-cp /mnt/c/Users/mike.kim/Desktop/MF-US-PRD.crt .
-#1567024711
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567024728
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert ./MF-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567046852
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.pem:26b34838e8e91a904189e48016e6e441
-#1567046898
-curl -v https://newdev-juliet.logicnow.com/api/quote?OpportunityId=0065000000lMFp8AAG -k --cert MF-US-PRD.pem:"26b34838e8e91a904189e48016e6e441"
-#1567047247
-pswh
-#1567047250
-pwsh
-#1567047326
-ver
-#1567047377
-pwsh
-#1567048833
-paket
-#1567048837
-paket.exe
-#1567048848
-pwsh
-#1566928515
-nvim-qt
-#1567087190
-cd /mnt/d/projects/
-#1567087190
-ll
-#1567087197
-cd juliet
-#1567087199
-ll
-#1567087211
-explorer.exe .
-#1567090400
-cd /mnt/d/mbst/juliet-pendo-service/
-#1567090404
-git status
-#1567090443
-nvim src/powershell/install.ps1 
-#1567090552
-git status
-#1567090555
-git add .
-#1567090565
-git commit
-#1567090962
-git status
-#1567090979
-git co develop
-#1567090988
-git merge feature/add-reverse-proxy-owin-middleware 
-#1567091018
-git pull origin develop
-#1567091064
-nvr -p src/CommonBranchInfo.cs 
-#1567091177
-git status
-#1567091185
-git commit
-#1567091203
-git status
-#1567091229
-git remote show origin
-#1567091257
-git fetch
-#1567091261
-git remote show origin
-#1567091290
-git remote prune
-#1567091310
-git status
-#1567091346
-powershell.exe
-#1567094008
-exit

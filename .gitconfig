@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+    name = mike.kim
+    email = mike.kim@solarwinds.com
+[http]
+    sslVerify = false
+[alias]
+    co = checkout
+    br = branch
+[credential]
+    helper = cache
+[core]
+    autocrlf = false
+
+

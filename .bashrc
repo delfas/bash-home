@@ -114,6 +114,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# change ls directory background colors
+LS_COLORS="ow=01;36;40" && export LS_COLORS
+
+# disable bell sound on backspace
+set bel-style none
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -163,7 +169,9 @@ if grep -qE "(Microsoft|WSL)" /proc/version &>/dev/null; then
 
     # Access local X-server with VcXsrv.
     #   Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
-    export DISPLAY=:1.0
+    export DISPLAY=:0.0
+    export LIBGL_ALWAYS_INDIRECT=1
+    export PATH="$PATH:/mnt/d/MobaXterm_Portable_v12.0/MobaXterm_Personal_12.0.exe"
 
     # Configure the Docker CLI to use the Docker for Windows daemon.
     #   Requires: https://docs.docker.com/docker-for-windows/install/
@@ -204,6 +212,15 @@ if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
   fi
 fi
 
-
+# Start MobaXterm on opening terminal if it's not running
+if ! xset q &>/dev/null; then
+    (
+    command MobaXterm.exe -hideterm  &
+    )&>/dev/null
+fi
 
 complete -o nospace -o plusdirs -F _fzf_dir_completion cd
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
